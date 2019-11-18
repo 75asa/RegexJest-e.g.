@@ -1,24 +1,24 @@
 const INVALID_TEST_DATA = require('./data/invalid_email.json')
 
 /**
- * ***前提条件***
- * * - 半角数字（10種類）
+ * - 半角数字（10種類）
  * - 半角英字（54種類）
  * - 記号（19種類）
  * - .!#$%&*+-/=?^_`{|}~
  * - 文字数  50バイト以内
  * - @は１つだけ
  * - RFC準拠（アドレス・ドメイン）
- *
  */
+
 const regex = /^[\w!#%&'/=~`\*\+\?\{\}\^\$\-\|]+(\.[\w!#%&'/=~`\*\+\?\{\}\^\$\-\|]+)*@[\w!#%&'/=~`\*\+\?\{\}\^\$\-\|]+(\.[\w!#%&'/=~`\*\+\?\{\}\^\$\-\|]+)*$/
+
 
 const execute_regex = ((data) => {
   return regex.test(data)
 })
 
 const is_under_50_length = ((data) => {
-  return data.length <= 50 ? true : false
+  return (data.length <= 50 ? true : false)
 })
 
 describe(`異常系: e-mail データ`, () => {
@@ -183,7 +183,7 @@ describe(`異常系: e-mail データ`, () => {
 
       it(`should be under 50 length`, () => {
         const length_output = is_under_50_length(data)
-        expect(regex_output).toBeFalsy()
+        expect(length_output).toBeFalsy()
       })
     })
   })
@@ -324,7 +324,7 @@ describe(`異常系: e-mail データ`, () => {
 
   describe(`valid email data: email_address_begin_dot_char`, () => {
 
-    const data = INVALID_TEST_DATA.email_domain_include_ampersand_char
+    const data = INVALID_TEST_DATA.email_address_begin_dot_char
 
     describe(`data: ${data}`, () => {
 

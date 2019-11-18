@@ -7,7 +7,7 @@
   "email_address_include_comma_char": "firstname,lastname@example.com",
   "email_domain_include_comma_char": "firstname@example,com",
   "email_domain_all_number": "hogehoge@123456789",
-  "email_too_long_char": "hogeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee_hogeeeeeeeeeeeeeeeeeee@fugaaaaaaaaaaaaaaaa.com",
+  "email_too_long_char": "hogeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee_hogeeeeeeeeeeeeeeeeeeeeeeeeeeee@fuuuuuuuuuuuuuuuuuuuuuuuuuugaaaaaaaaaaaaaaaa.commmmmmmmmmmmmmmmmmmmmmmmmmmm",
   "email_not_rfc_format": "lainaddress",
   "email_address_not_include_alpabet": "#@%^%#$@#$@#.com",
   "email_address_not_exist": "@example.com",
@@ -24,5 +24,6 @@
   "email_domain_begin_dash_char": "email@-example.com",
   "email_domain_begin_unique_name": "email@example.web",
   "email_all_domain_value_is_number": "email@111.222.333.44444",
-  "email_domain_continue_dot_char": "email@example..com"
+  "email_domain_continue_dot_char": "email@example..com",
+  "email_address_include_brackets_char": ""
 }
